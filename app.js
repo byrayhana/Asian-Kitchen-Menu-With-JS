@@ -81,7 +81,7 @@ const menu = [
     desc: `Red bean paste dessert, serving with honey.`,
   },
 ];
-let btnAll=document.querySelectorAll(".btn");
+let btnAll=document.querySelector("#All");
 let btnKorea=document.querySelector("#Korea");
 let btnJapan=document.querySelector("#Japan");
 let btnChina=document.querySelector("#China");
@@ -125,6 +125,7 @@ function allMenu() {
   btnKorea.addEventListener("click",() => {
     Menu(btnKorea);
   });
+
 
   function Menu(e){
     while (body.hasChildNodes()) {
